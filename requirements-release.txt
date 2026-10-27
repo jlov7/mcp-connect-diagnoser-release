@@ -1,0 +1,4 @@
+# Build tools only. Core runtime and unittest suite have no dependencies.
+setuptools==84.2.0
+wheel==0.48.0
+packaging==26.3

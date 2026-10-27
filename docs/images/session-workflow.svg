@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title description">
+  <title id="title">From a local MCP session to an offline catalogue comparison</title>
+  <desc id="description">The probe checks an explicit loopback endpoint through initialize, readiness, ping and tool discovery. It saves reduced-content JSON. Comparing two saved reports is offline and returns changed, unchanged or unavailable catalogue status.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#355b69"/></marker></defs>
+  <rect width="1120" height="430" rx="16" fill="#f6f8f8"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#172f38">
+    <text x="36" y="46" font-size="25" font-weight="700">Check the session. Keep the observations. Compare offline.</text>
+    <rect x="36" y="86" width="314" height="254" rx="10" fill="#fff" stroke="#809ca7" stroke-width="2"/>
+    <text x="56" y="120" font-size="21" font-weight="700">Explicit loopback endpoint</text>
+    <text x="56" y="150" font-size="16">http://127.0.0.1:PORT/mcp</text>
+    <text x="56" y="188" font-size="18">initialize</text>
+    <text x="56" y="220" font-size="18">readiness notification</text>
+    <text x="56" y="252" font-size="18">ping, then tools/list pages</text>
+    <text x="56" y="284" font-size="18">best-effort session cleanup</text>
+    <text x="56" y="320" font-size="15" fill="#405d69">One absolute deadline; JSON or SSE</text>
+    <path d="M358,214 H392" stroke="#355b69" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <rect x="408" y="86" width="294" height="254" rx="10" fill="#fff" stroke="#809ca7" stroke-width="2"/>
+    <text x="428" y="120" font-size="21" font-weight="700">New private JSON report</text>
+    <text x="428" y="166" font-size="18">Accepted or failed stages</text>
+    <text x="428" y="198" font-size="18">Counts and recovery advice</text>
+    <text x="428" y="230" font-size="18">Complete catalogue fingerprint</text>
+    <text x="428" y="274" font-size="16" fill="#405d69">Raw text, names, session IDs</text>
+    <text x="428" y="298" font-size="16" fill="#405d69">and cursor values are omitted.</text>
+    <path d="M710,214 H744" stroke="#355b69" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <rect x="760" y="86" width="324" height="254" rx="10" fill="#e8f0f3" stroke="#809ca7" stroke-width="2"/>
+    <text x="780" y="120" font-size="21" font-weight="700">Compare two saved reports</text>
+    <text x="780" y="166" font-size="18">before.json + after.json</text>
+    <text x="780" y="208" font-size="18">Catalogue: changed, unchanged</text>
+    <text x="780" y="236" font-size="18">or unavailable</text>
+    <text x="780" y="278" font-size="16" fill="#405d69">Offline. No endpoint request.</text>
+    <text x="780" y="304" font-size="16" fill="#405d69">Equality does not prove compatibility.</text>
+    <text x="36" y="382" font-size="18">No credentials. No tool execution. A successful check is bounded connection evidence.</text>
+    <text x="36" y="408" font-size="15" fill="#405d69">The fingerprint is unsigned and guessable. It does not authenticate the server or guarantee confidentiality.</text>
+  </g>
+</svg>

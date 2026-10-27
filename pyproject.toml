@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools==84.2.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-connect-diagnoser"
+version = "1.0.2"
+description = "Local MCP session checks and offline native transport record verification."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+mcp-connect-diagnoser = "mcp_connect_diagnoser.__main__:main"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+required-version = "==0.17.1"
+target-version = "py311"
+line-length = 100

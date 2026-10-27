@@ -1,0 +1,16 @@
+include CITATION.cff
+include LICENSE README.md SECURITY.md CONTRIBUTING.md CHANGELOG.md pyproject.toml requirements-release.txt
+include docs/USAGE.md docs/DESIGN.md docs/EVALUATION.md docs/LIMITATIONS.md docs/REFERENCES.md
+include docs/VALIDATION.md
+include docs/COMPATIBILITY.md
+include docs/STABILITY.md docs/RELEASING.md
+recursive-include docs/images *.svg
+recursive-include examples *.py
+recursive-include src *.py
+recursive-include tests *.py *.mjs *.json *.toml *.lock
+recursive-include scripts *.sh *.py
+prune tests/sdk/node_modules
+prune .release-scratch
+exclude LICENSE-STATUS.md STATUS.md AGENTS.md
+exclude docs/*HANDOFF*.md docs/*CONTINUATION*.md
+exclude docs/INCREMENT-2026-10-19.md docs/ORIGINAL-RESEARCH-BRIEF.md

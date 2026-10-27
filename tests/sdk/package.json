@@ -1,0 +1,12 @@
+{
+  "name": "mcp-connect-sdk-reproduction",
+  "private": true,
+  "type": "module",
+  "engines": {"node": "24.15.0"},
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.1",
+    "@modelcontextprotocol/express": "2.0.2",
+    "@modelcontextprotocol/node": "2.0.0",
+    "express": "5.1.0"
+  }
+}
